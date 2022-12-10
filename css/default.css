@@ -1,7 +1,42 @@
 @media screen and (max-width:480px) {
-    /*画面幅が480pxまでの時*/
+    /* less 480px */
 }
 
 @media screen and (min-width:781px) {
-    /*画面幅が781px以上の時*/
+
+    /* over 781px */
+
+    body {
+        padding: 0 5vw;
+    }
+
+    header {
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 68px;
+        position: fixed;
+        display: flex;
+        padding: 0 5vw;
+    }
+
+    header div:nth-child(1) {
+        display: table;
+    }
+
+    header div:nth-child(1) p {
+        display: table-cell;
+        vertical-align: middle;
+        font-family: Ubuntu;
+        font-weight: 700;
+        font-size: large;
+    }
+
+    #header-space {
+        display: block;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 68px;
+    }
 }

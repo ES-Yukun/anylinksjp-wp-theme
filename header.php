@@ -11,4 +11,9 @@
 </head>
 
 <body <?php body_class(); ?>><?php wp_body_open(); ?>
-    <header></header>
+    <header>
+        <div>
+            <p>anylinksjp</p>
+        </div>
+    </header>
+    <span id="header-space"></span>

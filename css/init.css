@@ -1,10 +1,21 @@
 @font-face {
     font-family: Meiryo;
-    src: url(https://github.com/huiyuan/forum/raw/master/fonts/Meiryo.ttf);
+    src: url(/fonts/Meiryo.ttf);
 }
+
+@font-face {
+    font-family: Ubuntu;
+    src: url(/fonts/ubuntu/ubuntu-font-family-0.83/Ubuntu-B.ttf);
+}
+
 
 * {
     margin: 0;
     padding: 0;
     font-family: Meiryo, Arial, sans-serif;
+}
+
+body {
+    background-color: #161513;
+    color: #f8fafb;
 }
