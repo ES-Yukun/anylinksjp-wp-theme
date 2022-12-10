@@ -5,7 +5,6 @@
   /* over 781px */
   body {
     background-color: black;
-    background: linear-gradient(-45deg, black, #140a1f, #0c0c27) fixed;
     background-size: 800% 800%;
     -webkit-animation: GradietionAnimation 9s ease infinite;
             animation: GradietionAnimation 9s ease infinite;
@@ -68,12 +67,12 @@
     display: block;
   }
   header div:nth-of-type(1) div:nth-of-type(2) div p:nth-of-type(1) {
-    font-family: Ubuntu;
+    font-family: "Ubuntu";
     font-weight: 500;
     font-size: 20px;
   }
   header div:nth-of-type(1) div:nth-of-type(2) div p:nth-of-type(2) {
-    font-family: Ubuntu;
+    font-family: "Ubuntu";
     font-style: italic;
     font-size: 7px;
     margin-top: -5px;
@@ -134,5 +133,7 @@
   }
   main {
     padding: 0 5vw;
+    background: linear-gradient(-45deg, black, #140a1f, #0c0c27) fixed;
+    min-height: 1000px;
   }
 }/*# sourceMappingURL=default.css.map */

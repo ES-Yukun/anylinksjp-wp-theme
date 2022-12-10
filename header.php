@@ -57,4 +57,3 @@
             </div>
         </div>
     </header>
-    <span id="header-space"></span>
