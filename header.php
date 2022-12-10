@@ -13,7 +13,18 @@
 <body <?php body_class(); ?>><?php wp_body_open(); ?>
     <header>
         <div>
-            <p>anylinksjp</p>
+            <div onclick="window.location.href = window.location.host">
+                <div><?php include(get_template_directory() . "/images/icon.svg"); ?></div>
+            </div>
+            <div>
+                <div onclick="window.location.href = window.location.host">
+                    <p>AnylinksJP</p>
+                    <p>&thinsp;Accelerate Cloud Solutions</p>
+                </div>
+            </div>
+            <div>
+                <p>About</p>
+            </div>
         </div>
     </header>
     <span id="header-space"></span>

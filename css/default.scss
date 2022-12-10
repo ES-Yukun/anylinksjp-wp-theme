@@ -1,0 +1,105 @@
+@media screen and (max-width:480px) {
+    /* less 480px */
+}
+
+@media screen and (min-width:781px) {
+
+    /* over 781px */
+
+    body {
+        background-color: black;
+        background: linear-gradient(-45deg, black, #140a1f, #0c0c27) fixed;
+        background-size: 800% 800%;
+        animation: GradietionAnimation 9s ease infinite;
+
+        @keyframes GradietionAnimation {
+            0% {
+                background-position: 0% 0%
+            }
+
+            50% {
+                background-position: 50% 50%
+            }
+
+            100% {
+                background-position: 0% 0%
+            }
+        }
+    }
+
+    header {
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 68px;
+        position: fixed;
+        display: flex;
+        padding: 0 5vw;
+        background: linear-gradient(to right, rgba(58, 54, 50, 0.5) 0%, rgba(0, 21, 51, 0.5) 100%);
+
+        div:nth-of-type(1) {
+            display: flex;
+
+            div:nth-of-type(1) {
+                display: table;
+
+                div {
+                    display: table-cell;
+                    vertical-align: middle;
+
+                    svg {
+                        width: 45px;
+                        height: 45px;
+                    }
+                }
+            }
+
+            div:nth-of-type(2) {
+                margin-left: 15px;
+                display: table;
+
+                div {
+                    display: table-cell;
+                    vertical-align: middle;
+
+                    p {
+                        display: block;
+                        text-align: left;
+                    }
+
+                    p:nth-of-type(1) {
+                        font-family: Ubuntu;
+                        font-weight: 500;
+                        font-size: 20px;
+                    }
+
+                    p:nth-of-type(2) {
+                        font-family: Ubuntu;
+                        font-style: italic;
+                        font-size: 7px;
+                    }
+                }
+            }
+
+            div:nth-of-type(3) {
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+        }
+    }
+
+    #header-space {
+        display: block;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 68px;
+    }
+
+    main {
+        padding: 0 5vw;
+
+        section:nth-of-type(1) {}
+    }
+}

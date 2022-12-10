@@ -16,11 +16,11 @@
             margin: 0;
             padding: 0;
             font-family: 'Open Sans';
+            color: #fff;
         }
 
         body {
             background-color: black;
-
             background: linear-gradient(-45deg, black, #140a1f, #0c0c27) fixed;
             background-size: 800% 800%;
             animation: GradietionAnimation 9s ease infinite;
