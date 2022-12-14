@@ -23,7 +23,7 @@ function pageInit()
         }
         foreach ($files as $file) {
             if (empty(get_page_by_path($file))) {
-                wp_insert_post(['post_title' => $file, 'post_name' => $file, 'post_status' => 'publish', 'post_type' => 'page', 'post_parent' => '', 'post_content' => '']);
+                wp_insert_post(['post_title' => $file, 'post_name' => $file, 'post_status' => 'publish', 'post_type' => 'page', 'post_parent' => '', 'post_content' => 'this content cannot edit']);
             }
         }
     }
