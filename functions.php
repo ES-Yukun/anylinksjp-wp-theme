@@ -3,10 +3,9 @@
 function disableAuthorPage()
 {
     global $wp_query;
-    if (is_author()) {
-        $wp_query->set_404();
+    if (is_author() == 1) {
         status_header(404);
-        exit;
+        $wp_query->set_404();
     }
 }
 add_action('template_redirect', 'disableAuthorPage');
