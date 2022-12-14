@@ -1,17 +1,15 @@
 <?php
 
-add_action('template_redirect', 'my_custom_disable_author_page');
-
-function my_custom_disable_author_page() {
+function disableAuthorPage()
+{
     global $wp_query;
-
-    if ( is_author() ) {
-        // Redirect to homepage, set status to 301 permenant redirect. 
-        // Function defaults to 302 temporary redirect. 
-        wp_redirect(get_option('/'), 301); 
-        exit; 
+    if (is_author()) {
+        $wp_query->set_404();
+        status_header(404);
+        exit;
     }
 }
+add_action('template_redirect', 'disableAuthorPage');
 
 function themeSetup()
 {
