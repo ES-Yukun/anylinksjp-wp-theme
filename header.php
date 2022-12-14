@@ -24,12 +24,12 @@
 
 <body <?php body_class(); ?>><?php wp_body_open(); ?>
     <header>
-        <div>
-            <div onclick="window.location.href = window.location.host">
+        <div onclick="window.location.href = window.location.host">
+            <div>
                 <div><?php include(get_template_directory() . "/images/icon.svg"); ?></div>
             </div>
             <div>
-                <div onclick="window.location.href = window.location.host">
+                <div>
                     <p>AnylinksJP</p>
                     <p>Cloud Computing</p>
                 </div>
@@ -60,3 +60,5 @@
             </div>
         </div>
     </header>
+    <main>
+        <span id="header-space"></span>

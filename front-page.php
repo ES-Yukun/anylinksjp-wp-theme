@@ -1,8 +1,5 @@
 <?php get_header(); ?>
-<main>
-    <span id="header-space"></span>
-    <section>
-        
-    </section>
-</main>
+<section>
+
+</section>
 <?php get_footer(); ?>
