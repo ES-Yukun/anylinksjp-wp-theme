@@ -7,15 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>anylinksjp 404 Not Found</title>
     <style>
-        @font-face {
-            font-family: 'Open Sans';
-            src: url(./fonts/opensans/static/OpenSans/OpenSans-Medium.ttf);
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Ubuntu&display=swap');
 
         * {
             margin: 0;
             padding: 0;
-            font-family: 'Open Sans';
+            font-family: 'Noto Sans JP', sans-serif;
             color: #fff;
         }
 
