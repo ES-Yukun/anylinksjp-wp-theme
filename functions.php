@@ -1,4 +1,18 @@
 <?php
+
+add_action('template_redirect', 'my_custom_disable_author_page');
+
+function my_custom_disable_author_page() {
+    global $wp_query;
+
+    if ( is_author() ) {
+        // Redirect to homepage, set status to 301 permenant redirect. 
+        // Function defaults to 302 temporary redirect. 
+        wp_redirect(get_option('/'), 301); 
+        exit; 
+    }
+}
+
 function themeSetup()
 {
     add_theme_support('post-thumbnails');       // Enable eye-catching image
