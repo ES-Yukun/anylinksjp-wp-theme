@@ -2,23 +2,22 @@
 <html lang="ja">
 
 <head>
-    <?php
-    $description = "anylinksjpによるクラウドコンピューティングのアプリケーションの開発支援. anylinks k8s platformでは、パートナー様やお客様にkubernetesを基盤とした独自アプリケーションの開発支援をしています."
-    ?>
+    <?php include(get_template_directory() . "/CONFIG.php"); ?>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="<?php echo $description; ?>">
-    <meta name="keywords" content="anylinksjp, anylinks, jp, kubernetes, cloud, computing, k8s">
+    <meta name="description" content="<?php echo $__COMPANY["description"]; ?>">
+    <meta name="keywords" content="<?php echo $__COMPANY["words"]; ?>">
     <meta property="og:type" content="home" />
-    <meta property="og:title" content="AnylinksJP" />
-    <meta property="og:description" content="<?php echo $description; ?>" />
+    <meta property="og:title" content="<?php if (empty(get_the_title())) echo ($__COMPANY["catch_name"]);
+                                        else echo get_the_title(); ?>" />
+    <meta property="og:description" content="<?php echo $__COMPANY["description"]; ?>" />
     <meta property="og:url" content="<?php echo (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https://' : 'http://') . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>" />
-    <meta property="og:site_name" content="Anylinks Japan - Cloud Computing" />
-    <meta property="og:image" content="<?php echo ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]/wp-content/themes/anylinksjp/images/thumbnail.png") ?>" />
+    <meta property="og:site_name" content="<?php echo $__COMPANY["catch_name"]; ?>" />
+    <meta property="og:image" content="<?php echo $__COMPANY["image"]; ?>" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@anylinksjp" />
-    <title>anylinksjp</title>
+    <meta name="twitter:site" content="@<?php echo $__COMPANY["twitter_id"]; ?>" />
+    <?php if (empty(get_the_title())) : ?><title><?php echo ($__COMPANY["catch_name"]); ?></title><?php endif; ?>
     <?php wp_head(); ?>
 </head>
 

@@ -1,5 +1,13 @@
 <?php
 
+add_filter( 'author_rewrite_rules', '__return_empty_array' );
+function disable_embeds_filter_oembed_response_data_( $data ) {
+    unset($data['author_url']);
+    unset($data['author_name']);
+    return $data;
+}
+add_filter( 'oembed_response_data', 'disable_embeds_filter_oembed_response_data_' );
+
 function disableAuthorPage()
 {
     global $wp_query;
@@ -12,11 +20,9 @@ add_action('template_redirect', 'disableAuthorPage');
 
 function themeSetup()
 {
-    add_theme_support('post-thumbnails');       // Enable eye-catching image
-    add_theme_support('automatic-feed-links');  // Enable RSS feed for Posts and Comments
-    add_theme_support('title-tag');             // Enable automatic Title generation
-
-    add_theme_support('html5', array(           // Configure output via HTML
+    include(get_template_directory() . "/CONFIG.php");
+    add_theme_support('title-tag');                                 // Enable automatic Title generation
+    add_theme_support('html5', array(                               // Configure output via HTML
         'search-form',
         'gallery',
         'caption',
