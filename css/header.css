@@ -3,9 +3,6 @@
 }
 @media screen and (min-width: 781px) {
   /* over 781px */
-  body {
-    background-color: black;
-  }
   header {
     left: 0;
     right: 0;
@@ -13,7 +10,7 @@
     height: 68px;
     position: fixed;
     display: flex;
-    padding: 0 5vw;
+    padding: 0 11vw;
     background: linear-gradient(to right, rgba(58, 54, 50, 0.5) 0%, rgba(0, 21, 51, 0.5) 100%);
   }
   header div:nth-of-type(1) {
@@ -44,51 +41,72 @@
   header div:nth-of-type(1) div:nth-of-type(2) div p:nth-of-type(1) {
     font-family: "Ubuntu";
     font-weight: 500;
-    font-size: 20px;
+    font-size: 25px;
   }
   header div:nth-of-type(1) div:nth-of-type(2) div p:nth-of-type(2) {
     font-family: "Ubuntu";
     font-style: italic;
-    font-size: 7px;
-    margin-top: -3px;
+    font-size: 12px;
+    margin-top: -2px;
   }
   header div:nth-of-type(2) {
     display: flex;
+    right: 0;
+    left: 0;
+    margin: 0 auto 0 auto;
+  }
+  header div:nth-of-type(2) div:nth-of-type(n) {
+    display: table;
+    margin: 0 20px;
+  }
+  header div:nth-of-type(2) div:nth-of-type(n) div {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+@media screen and (min-width: 781px) and (max-width: 1251px) {
+  header div:nth-of-type(2) div:nth-last-of-type(1) {
+    display: none;
+  }
+}
+@media screen and (min-width: 781px) and (max-width: 981px) {
+  header div:nth-of-type(2) div:nth-last-of-type(2) {
+    display: none;
+  }
+}
+@media screen and (min-width: 781px) {
+  header div:nth-of-type(3) {
+    display: flex;
     margin: 0 0 0 auto;
   }
-  header div:nth-of-type(2) div:nth-of-type(1) {
-    display: table;
-    margin: 0 10px;
-  }
-  header div:nth-of-type(2) div:nth-of-type(1) div {
-    display: table-cell;
-    vertical-align: middle;
-  }
-  header div:nth-of-type(2) div:nth-of-type(2) {
-    display: table;
-    margin: 0 10px;
-  }
-  header div:nth-of-type(2) div:nth-of-type(2) div {
-    display: table-cell;
-    vertical-align: middle;
-  }
-  header div:nth-of-type(2) div:nth-of-type(3) {
-    display: table;
-    margin: 0 10px;
-  }
-  header div:nth-of-type(2) div:nth-of-type(3) div {
-    display: table-cell;
-    vertical-align: middle;
-  }
-  header div:nth-of-type(2) div:nth-of-type(4) {
+  header div:nth-of-type(3) div:nth-of-type(1) div:nth-of-type(1) {
     display: table;
     margin-left: 30px;
   }
-  header div:nth-of-type(2) div:nth-of-type(4) div {
+  header div:nth-of-type(3) div:nth-of-type(1) div:nth-of-type(1) div {
     display: table-cell;
     vertical-align: middle;
   }
-  header div:nth-of-type(2) div:nth-of-type(4) div p {
+  header div:nth-of-type(3) div:nth-of-type(1) div:nth-of-type(1) div p {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #FFF;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMyIgaGVpZ2h0PSIyMyIgY2xhc3M9Imlvbmljb24iIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48dGl0bGU+Qm9keTwvdGl0bGU+PGNpcmNsZSBmaWxsPSIjRkZGIiBzdHJva2U9IiNGRkYiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIzMiIgY3g9IjI1NiIgY3k9IjU2IiByPSI0MCIvPjxwYXRoIGZpbGw9IiNGRkYiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2Utd2lkdGg9IjMyIiBkPSJNMTk5LjMgMjk1LjYyaDBsLTMwLjQgMTcyLjJhMjQgMjQgMCAwMDE5LjUgMjcuOCAyMy43NiAyMy43NiAwIDAwMjcuNi0xOS41bDIxLTExOS45di4yczUuMi0zMi41IDE3LjUtMzIuNWgzLjFjMTIuNSAwIDE3LjUgMzIuNSAxNy41IDMyLjV2LS4xbDIxIDExOS45YTIzLjkyIDIzLjkyIDAgMTA0Ny4xLTguNGwtMzAuNC0xNzIuMi00LjktMjkuN2MtMi45LTE4LjEtNC4yLTQ3LjYuNS01OS43IDQtMTAuNCAxNC4xMy0xNC4yIDIzLjItMTQuMkg0MjRhMjQgMjQgMCAwMDAtNDhIODhhMjQgMjQgMCAwMDAgNDhoOTIuNWM5LjIzIDAgMTkuMiAzLjggMjMuMiAxNC4yIDQuNyAxMi4xIDMuNCA0MS42LjUgNTkuN3oiLz48L3N2Zz4=");
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    transition: background-color 0.2s ease;
+    background-position: 10px center;
+    padding-left: 35px;
+  }
+  header div:nth-of-type(3) div:nth-of-type(2) {
+    display: table;
+    margin-left: 30px;
+  }
+  header div:nth-of-type(3) div:nth-of-type(2) div {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  header div:nth-of-type(3) div:nth-of-type(2) div p {
     padding: 10px;
     border-radius: 4px;
     border: 1px solid #FFF;
@@ -99,6 +117,18 @@
     background-position: 10px center;
     padding-left: 35px;
   }
+}
+@media screen and (min-width: 781px) and (max-width: 1501px) {
+  header div:nth-of-type(3) div:nth-of-type(2) {
+    display: none;
+  }
+}
+@media screen and (min-width: 781px) and (max-width: 821px) {
+  header div:nth-of-type(3) div:nth-of-type(1) {
+    display: none;
+  }
+}
+@media screen and (min-width: 781px) {
   #header-space {
     display: block;
     left: 0;
@@ -106,6 +136,8 @@
     margin: auto;
     height: 68px;
   }
+}
+@media screen and (min-width: 781px) {
   main {
     padding: 0 5vw;
     background: linear-gradient(-45deg, black, #140a1f, #0c0c27) fixed;

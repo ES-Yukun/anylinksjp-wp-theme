@@ -1,6 +1,6 @@
 <?php
-$__COMPANY["name"]["long"] = "AnylinksJapan";
-$__COMPANY["name"]["short"] = "AnylinksJP";
+$__COMPANY["name"]["long"] = "AnylinksJP";
+$__COMPANY["name"]["short"] = "anylinksjp";
 $__COMPANY["description"] = "anylinksjpによるクラウドコンピューティングのアプリケーションの開発支援. anylinks k8s platformでは、パートナー様やお客様にkubernetesを基盤とした独自アプリケーションの開発支援をしています.";
 $__COMPANY["catch_name"] = "Anylinks Japan - Cloud Computing";
 $__COMPANY["words"] = "anylinksjp, anylinks, jp, kubernetes, cloud, computing, k8s";

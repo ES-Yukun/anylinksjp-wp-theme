@@ -1,7 +1,7 @@
 </main>
 <footer>
     <?php include(get_template_directory() . "/CONFIG.php"); ?>
-    <div>
+    <div class="footer-top">
         <div>
             <p>リソース</p>
             <p><?php echo $__COMPANY["name"]["short"]; ?>について</p>
@@ -20,13 +20,13 @@
         </div>
     </div>
     <?php if (!empty($__SNS_CONFIG)) { ?>
-        <div>
-            <?php if (!empty($__SNS_CONFIG["discord"])) { ?> <div onclick="<?php echo $__SNS_CONFIG["discord"]; ?>"><?php include(get_template_directory() . "/images/logo-discord.svg"); ?></div> <?php } ?>
-            <?php if (!empty($__SNS_CONFIG["twitter"])) { ?> <div onclick="<?php echo $__SNS_CONFIG["twitter"]; ?>"><?php include(get_template_directory() . "/images/logo-twitter.svg"); ?></div> <?php } ?>
-            <?php if (!empty($__SNS_CONFIG["instagram"])) { ?> <div onclick="<?php echo $__SNS_CONFIG["instagram"]; ?>"><?php include(get_template_directory() . "/images/logo-instagram.svg"); ?></div> <?php } ?>
+        <div class="footer-middle">
+            <?php if (!empty($__SNS_CONFIG["discord"])) { ?> <div onclick="location.href='<?php echo $__SNS_CONFIG["discord"]; ?>'"><?php include(get_template_directory() . "/images/logo-discord.svg"); ?></div> <?php } ?>
+            <?php if (!empty($__SNS_CONFIG["twitter"])) { ?> <div onclick="location.href='<?php echo $__SNS_CONFIG["twitter"]; ?>'"><?php include(get_template_directory() . "/images/logo-twitter.svg"); ?></div> <?php } ?>
+            <?php if (!empty($__SNS_CONFIG["instagram"])) { ?> <div onclick="location.href='<?php echo $__SNS_CONFIG["instagram"]; ?>'"><?php include(get_template_directory() . "/images/logo-instagram.svg"); ?></div> <?php } ?>
         </div>
     <?php } ?>
-    <div>
+    <div class="footer-bottom">
         <p>@<?php echo date('Y') . " " . $__COMPANY["name"]["long"]; ?></p>
         <p>利用規約とプライバシー</p>
         <p>採用</p>

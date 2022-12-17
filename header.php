@@ -6,8 +6,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="<?php echo $__COMPANY["description"]; ?>">
-    <meta name="keywords" content="<?php echo $__COMPANY["words"]; ?>">
+    <meta name="description" content="<?php echo $__COMPANY["description"]; ?>" />
+    <meta name="keywords" content="<?php echo $__COMPANY["words"]; ?>" />
     <meta property="og:type" content="home" />
     <meta property="og:title" content="<?php if (empty(get_the_title())) echo ($__COMPANY["catch_name"]);
                                         else echo get_the_title(); ?>" />
@@ -37,23 +37,37 @@
         <div>
             <div>
                 <div>
-                    <p>About</p>
+                    <p>サービス一覧</p>
                 </div>
             </div>
             <div>
                 <div>
-                    <p>Products</p>
+                    <p>パートナー</p>
                 </div>
             </div>
             <div>
                 <div>
-                    <p>Terms</p>
+                    <p>弊社について</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p>利用規約</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <div>
+                        <p>アカウント表示</p>
+                    </div>
                 </div>
             </div>
             <div>
                 <div>
                     <div>
-                        <p>Contact Sales</p>
+                        <p>担当者に問い合わせる</p>
                     </div>
                 </div>
             </div>
