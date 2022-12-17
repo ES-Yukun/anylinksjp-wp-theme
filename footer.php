@@ -5,8 +5,8 @@
         <div>
             <p>リソース</p>
             <p><?php echo $__COMPANY["name"]["short"]; ?>について</p>
-            <p onclick="location.href='./adoption'">採用</p>
             <p onclick="location.href='./partner'">パートナー</p>
+            <p onclick="location.href='./products'">製品</p>
         </div>
         <div>
             <p>新着情報</p>
@@ -16,7 +16,8 @@
         <div>
             <p>お問い合わせ</p>
             <p onclick="location.href='./sales'">セールス</p>
-            <p onclick="location.href='./evets'">イベント</p>
+            <p onclick="location.href='./events'">イベント</p>
+            <p onclick="location.href='./adoption'">採用</p>
         </div>
     </div>
     <?php if (!empty($__SNS_CONFIG)) { ?>
