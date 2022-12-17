@@ -1,12 +1,13 @@
 <?php
 
-add_filter( 'author_rewrite_rules', '__return_empty_array' );
-function disable_embeds_filter_oembed_response_data_( $data ) {
+add_filter('author_rewrite_rules', '__return_empty_array');
+function disable_embeds_filter_oembed_response_data_($data)
+{
     unset($data['author_url']);
     unset($data['author_name']);
     return $data;
 }
-add_filter( 'oembed_response_data', 'disable_embeds_filter_oembed_response_data_' );
+add_filter('oembed_response_data', 'disable_embeds_filter_oembed_response_data_');
 
 function disableAuthorPage()
 {
@@ -29,6 +30,12 @@ function themeSetup()
     ));
 }
 add_action('after_setup_theme', 'themeSetup');
+
+function favicon()
+{
+    echo '<link rel="Shortcut Icon" type="image/x-icon" href="' . get_template_directory_uri() . '/images/favicon-black.ico" />';
+}
+add_action('wp_head', 'favicon');
 
 function pageInit()
 {

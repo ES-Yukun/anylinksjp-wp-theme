@@ -4,7 +4,7 @@
     <div class="footer-top">
         <div>
             <p>リソース</p>
-            <p><?php echo $__COMPANY["name"]["short"]; ?>について</p>
+            <p onclick="location.href='./about'"><?php echo $__COMPANY["name"]["short"]; ?>について</p>
             <p onclick="location.href='./partner'">パートナー</p>
             <p onclick="location.href='./products'">製品</p>
         </div>
@@ -32,7 +32,6 @@
         <p onclick="location.href='./terms'">利用規約とプライバシー</p>
         <p onclick="location.href='./adoption'">採用</p>
     </div>
-    <?php echo get_the_title() ?>
 </footer>
 <?php wp_footer(); ?>
 </body>
