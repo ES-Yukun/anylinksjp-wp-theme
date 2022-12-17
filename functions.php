@@ -59,6 +59,9 @@ function custom()
     if (is_front_page()) { // Same as is_front_page()
         wp_enqueue_style('css-default', get_template_directory_uri() . '/css/front/main.css', array(), '0.1.0');
         wp_enqueue_script('js-default', get_template_directory_uri() . '/js/front/main.js', array(), '0.1.0');
+    } else {
+        wp_enqueue_style('css-default', get_template_directory_uri() . '/css//' . get_the_title() . '/main.css', array(), '0.1.0');
+        wp_enqueue_script('js-default', get_template_directory_uri() . '/js//' . get_the_title() . '/main.js', array(), '0.1.0');
     }
 }
 
