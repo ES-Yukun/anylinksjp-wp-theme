@@ -28,6 +28,7 @@
                 }
 
                 p:nth-of-type(n+2) {
+                    display: table;
                     margin: 5px 10px;
                     padding-bottom: 1px;
                 }
@@ -47,6 +48,7 @@
                 width: 2vw;
                 padding: 0.3vw;
                 margin: 0.3vw;
+
                 svg {
                     fill: #FFF;
                 }
@@ -57,6 +59,7 @@
             padding: 3vw;
             text-align: center;
             vertical-align: middle;
+
             p {
                 display: inline-block;
                 font-size: 20px;
@@ -65,3 +68,4 @@
         }
     }
 }
+

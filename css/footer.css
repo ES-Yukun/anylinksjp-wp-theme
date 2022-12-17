@@ -25,6 +25,7 @@
     border-bottom: 2px solid #a61313;
   }
   footer div.footer-top div p:nth-of-type(n+2) {
+    display: table;
     margin: 5px 10px;
     padding-bottom: 1px;
   }

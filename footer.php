@@ -31,7 +31,7 @@
         <p>利用規約とプライバシー</p>
         <p>採用</p>
     </div>
-    <?php echo get_the_title()?>
+    <?php echo get_the_title() ?>
 </footer>
 <?php wp_footer(); ?>
 </body>
