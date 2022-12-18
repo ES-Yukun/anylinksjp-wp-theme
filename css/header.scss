@@ -1,185 +1,188 @@
-@media screen and (max-width:480px) {
+@media screen and (max-width: 480px) {
   /* less 480px */
 }
 
-@media screen and (min-width:781px) {
-
+@media screen and (min-width: 781px) {
   /* over 781px */
 
   header {
-      left: 0;
-      right: 0;
-      margin: auto;
-      height: 68px;
-      position: fixed;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 68px;
+    position: fixed;
+    display: flex;
+    padding: 0 11vw;
+    background: linear-gradient(
+      to right,
+      rgba(58, 54, 50, 0.5) 0%,
+      rgba(0, 21, 51, 0.5) 100%
+    );
+
+    div:nth-of-type(1) {
       display: flex;
-      padding: 0 11vw;
-      background: linear-gradient(to right, rgba(58, 54, 50, 0.5) 0%, rgba(0, 21, 51, 0.5) 100%);
 
       div:nth-of-type(1) {
-          display: flex;
+        display: table;
 
-          div:nth-of-type(1) {
-              display: table;
+        div {
+          display: table-cell;
+          vertical-align: middle;
 
-              div {
-                  display: table-cell;
-                  vertical-align: middle;
-
-                  svg {
-                      width: 45px;
-                      height: 45px;
-                  }
-              }
+          svg {
+            width: 45px;
+            height: 45px;
           }
-
-          div:nth-of-type(2) {
-              margin-left: 15px;
-              display: table;
-
-              div {
-                  display: table-cell;
-                  vertical-align: middle;
-
-                  p {
-                      display: block;
-                  }
-
-                  p:nth-of-type(1) {
-                      font-family: 'Ubuntu';
-                      font-weight: 500;
-                      font-size: 25px;
-                  }
-
-                  p:nth-of-type(2) {
-                      font-family: 'Ubuntu';
-                      font-style: italic;
-                      font-size: 12px;
-                      margin-top: -2px;
-                  }
-              }
-          }
+        }
       }
 
       div:nth-of-type(2) {
-          display: flex;
-          right: 0;
-          left: 0;
-          margin: 0 auto 0 auto;
+        margin-left: 15px;
+        display: table;
 
-          div:nth-of-type(n) {
-              display: table;
-              margin: 0 20px;
+        div {
+          display: table-cell;
+          vertical-align: middle;
 
-              div {
-                  display: table-cell;
-                  vertical-align: middle;
-              }
+          p {
+            display: block;
           }
 
-          @media screen and (max-width:1251px) {
-              div:nth-last-of-type(1) {
-                  display: none;
-              }
+          p:nth-of-type(1) {
+            font-family: "Ubuntu";
+            font-weight: 500;
+            font-size: 25px;
           }
 
-          @media screen and (max-width:981px) {
-              div:nth-last-of-type(2) {
-                  display: none;
-              }
+          p:nth-of-type(2) {
+            font-family: "Ubuntu";
+            font-style: italic;
+            font-size: 12px;
+            margin-top: -2px;
           }
+        }
+      }
+    }
+
+    div:nth-of-type(2) {
+      display: flex;
+      right: 0;
+      left: 0;
+      margin: 0 auto 0 auto;
+
+      div:nth-of-type(n) {
+        display: table;
+        margin: 0 20px;
+
+        div {
+          display: table-cell;
+          vertical-align: middle;
+        }
       }
 
-      div:nth-of-type(3) {
-          display: flex;
-          margin: 0 0 0 auto;
-
-          div:nth-of-type(1) {
-              div:nth-of-type(1) {
-                  display: table;
-                  margin-left: 30px;
-
-                  div {
-                      display: table-cell;
-                      vertical-align: middle;
-
-                      p {
-                          padding: 10px;
-                          border-radius: 4px;
-                          border: 1px solid #FFF;
-                          background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMyIgaGVpZ2h0PSIyMyIgY2xhc3M9Imlvbmljb24iIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48dGl0bGU+Qm9keTwvdGl0bGU+PGNpcmNsZSBmaWxsPSIjRkZGIiBzdHJva2U9IiNGRkYiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIzMiIgY3g9IjI1NiIgY3k9IjU2IiByPSI0MCIvPjxwYXRoIGZpbGw9IiNGRkYiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2Utd2lkdGg9IjMyIiBkPSJNMTk5LjMgMjk1LjYyaDBsLTMwLjQgMTcyLjJhMjQgMjQgMCAwMDE5LjUgMjcuOCAyMy43NiAyMy43NiAwIDAwMjcuNi0xOS41bDIxLTExOS45di4yczUuMi0zMi41IDE3LjUtMzIuNWgzLjFjMTIuNSAwIDE3LjUgMzIuNSAxNy41IDMyLjV2LS4xbDIxIDExOS45YTIzLjkyIDIzLjkyIDAgMTA0Ny4xLTguNGwtMzAuNC0xNzIuMi00LjktMjkuN2MtMi45LTE4LjEtNC4yLTQ3LjYuNS01OS43IDQtMTAuNCAxNC4xMy0xNC4yIDIzLjItMTQuMkg0MjRhMjQgMjQgMCAwMDAtNDhIODhhMjQgMjQgMCAwMDAgNDhoOTIuNWM5LjIzIDAgMTkuMiAzLjggMjMuMiAxNC4yIDQuNyAxMi4xIDMuNCA0MS42LjUgNTkuN3oiLz48L3N2Zz4=");
-                          background-repeat: no-repeat;
-                          box-sizing: border-box;
-                          transition: background-color .2s ease;
-                          background-position: 10px center;
-                          padding-left: 35px;
-                      }
-                  }
-              }
-          }
-
-          div:nth-of-type(2) {
-              display: table;
-              margin-left: 30px;
-
-              div {
-                  display: table-cell;
-                  vertical-align: middle;
-
-                  p {
-                      padding: 10px;
-                      border-radius: 4px;
-                      border: 1px solid #FFF;
-                      background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23FBF9F8;fill-rule:evenodd;%7D%3C/style%3E%3C/defs%3E%3Cpath class='cls-1' d='M17,2V6h5V22H18.46l-2-3H7V15.8L5.54,18H2V2Zm3,6H17v7H9v2h8.54l2,3H20ZM15,4H4V16h.46l2-3H15Z' transform='translate(-2 -2)'/%3E%3C/svg%3E");
-                      background-repeat: no-repeat;
-                      box-sizing: border-box;
-                      transition: background-color .2s ease;
-                      background-position: 10px center;
-                      padding-left: 35px;
-                  }
-              }
-          }
-
-          @media screen and (max-width:1501px) {
-              div:nth-of-type(2) {
-                  display: none;
-              }
-          }
-
-          @media screen and (max-width:821px) {
-              div:nth-of-type(1) {
-                  display: none;
-              }
-          }
+      @media screen and (max-width: 1251px) {
+        div:nth-last-of-type(1) {
+          display: none;
+        }
       }
+
+      @media screen and (max-width: 981px) {
+        div:nth-last-of-type(2) {
+          display: none;
+        }
+      }
+    }
+
+    div:nth-of-type(3) {
+      display: flex;
+      margin: 0 0 0 auto;
+
+      div:nth-of-type(1) {
+        div:nth-of-type(1) {
+          display: table;
+          margin-left: 30px;
+
+          div {
+            display: table-cell;
+            vertical-align: middle;
+
+            p {
+              padding: 10px;
+              border-radius: 4px;
+              border: 1px solid #fff;
+              background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMyIgaGVpZ2h0PSIyMyIgY2xhc3M9Imlvbmljb24iIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48dGl0bGU+Qm9keTwvdGl0bGU+PGNpcmNsZSBmaWxsPSIjRkZGIiBzdHJva2U9IiNGRkYiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIzMiIgY3g9IjI1NiIgY3k9IjU2IiByPSI0MCIvPjxwYXRoIGZpbGw9IiNGRkYiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2Utd2lkdGg9IjMyIiBkPSJNMTk5LjMgMjk1LjYyaDBsLTMwLjQgMTcyLjJhMjQgMjQgMCAwMDE5LjUgMjcuOCAyMy43NiAyMy43NiAwIDAwMjcuNi0xOS41bDIxLTExOS45di4yczUuMi0zMi41IDE3LjUtMzIuNWgzLjFjMTIuNSAwIDE3LjUgMzIuNSAxNy41IDMyLjV2LS4xbDIxIDExOS45YTIzLjkyIDIzLjkyIDAgMTA0Ny4xLTguNGwtMzAuNC0xNzIuMi00LjktMjkuN2MtMi45LTE4LjEtNC4yLTQ3LjYuNS01OS43IDQtMTAuNCAxNC4xMy0xNC4yIDIzLjItMTQuMkg0MjRhMjQgMjQgMCAwMDAtNDhIODhhMjQgMjQgMCAwMDAgNDhoOTIuNWM5LjIzIDAgMTkuMiAzLjggMjMuMiAxNC4yIDQuNyAxMi4xIDMuNCA0MS42LjUgNTkuN3oiLz48L3N2Zz4=");
+              background-repeat: no-repeat;
+              box-sizing: border-box;
+              transition: background-color 0.2s ease;
+              background-position: 10px center;
+              padding-left: 35px;
+            }
+          }
+        }
+      }
+
+      div:nth-of-type(2) {
+        display: table;
+        margin-left: 30px;
+
+        div {
+          display: table-cell;
+          vertical-align: middle;
+
+          p {
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #fff;
+            background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23FBF9F8;fill-rule:evenodd;%7D%3C/style%3E%3C/defs%3E%3Cpath class='cls-1' d='M17,2V6h5V22H18.46l-2-3H7V15.8L5.54,18H2V2Zm3,6H17v7H9v2h8.54l2,3H20ZM15,4H4V16h.46l2-3H15Z' transform='translate(-2 -2)'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            box-sizing: border-box;
+            transition: background-color 0.2s ease;
+            background-position: 10px center;
+            padding-left: 35px;
+          }
+        }
+      }
+
+      @media screen and (max-width: 1501px) {
+        div:nth-of-type(2) {
+          display: none;
+        }
+      }
+
+      @media screen and (max-width: 821px) {
+        div:nth-of-type(1) {
+          display: none;
+        }
+      }
+    }
   }
 
   #header-space {
-      display: block;
-      left: 0;
-      right: 0;
-      margin: auto;
-      height: 68px;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 68px;
   }
 
   main {
-      padding: 0 5vw;
-      background: linear-gradient(-45deg, black, #140a1f, #0c0c27) fixed;
-      background-size: 800% 800%;
-      animation: GradietionAnimation 9s ease infinite;
+    padding: 0 5vw;
+    background: linear-gradient(-45deg, black, #140a1f, #0c0c27) fixed;
+    background-size: 800% 800%;
+    animation: GradietionAnimation 9s ease infinite;
 
-      @keyframes GradietionAnimation {
-          0% {
-              background-position: 0% 0%
-          }
-
-          50% {
-              background-position: 50% 50%
-          }
-
-          100% {
-              background-position: 0% 0%
-          }
+    @keyframes GradietionAnimation {
+      0% {
+        background-position: 0% 0%;
       }
+
+      50% {
+        background-position: 50% 50%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
   }
 }
