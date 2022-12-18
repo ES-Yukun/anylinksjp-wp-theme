@@ -7,7 +7,7 @@
     left: 0;
     right: 0;
     margin: auto;
-    background-color: #3A363B;
+    background-color: #3a363b;
   }
   footer div.footer-top {
     text-align: center;
@@ -29,13 +29,13 @@
        border-image: linear-gradient(to right, #a61313 0%, #d10d0d 50%, #a61313 100%);
     border-image-slice: 1;
   }
-  footer div.footer-top div p:nth-of-type(n+2) {
+  footer div.footer-top div p:nth-of-type(n + 2) {
     display: table;
     margin: 5px 10px;
     padding-bottom: 1px;
   }
-  footer div.footer-top div p:nth-of-type(n+2):hover {
-    border-bottom: 1px solid #FFF;
+  footer div.footer-top div p:nth-of-type(n + 2):hover {
+    border-bottom: 1px solid #fff;
     padding-bottom: 0px;
   }
   footer div.footer-middle {
@@ -49,7 +49,7 @@
     margin: 0.3vw;
   }
   footer div.footer-middle div svg {
-    fill: #FFF;
+    fill: #fff;
   }
   footer div.footer-bottom {
     padding: 3vw;
