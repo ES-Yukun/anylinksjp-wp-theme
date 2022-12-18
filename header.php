@@ -45,26 +45,26 @@
                     <p>パートナー</p>
                 </div>
             </div>
-            <div>
+            <div class="resp-hide-whenmax-1251">
                 <div>
                     <p>弊社について</p>
                 </div>
             </div>
-            <div>
+            <div class="resp-hide-whenmax-981">
                 <div>
                     <p>利用規約</p>
                 </div>
             </div>
         </div>
         <div>
-            <div>
+            <div  class="resp-hide-whenmax-821">
                 <div>
                     <div>
                         <p>アカウント表示</p>
                     </div>
                 </div>
             </div>
-            <div>
+            <div class="resp-hide-whenmax-1501">
                 <div>
                     <div>
                         <p>担当者に問い合わせる</p>

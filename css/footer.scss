@@ -24,7 +24,11 @@
                     width: 15vw;
                     margin: 10px 10px 15px 10px;
                     padding: 0 0 13px 0;
-                    border-bottom: 2px solid #a61313;
+                    border-bottom: 2px solid;
+                    font-weight: 900;
+                    font-size: 17px;
+                    border-image: linear-gradient(to right, #a61313 0%, #d10d0d 50%, #a61313 100%);
+                    border-image-slice: 1;
                 }
 
                 p:nth-of-type(n+2) {
@@ -46,6 +50,7 @@
             div {
                 display: inline-block;
                 width: 2vw;
+                min-width: 25px;
                 padding: 0.3vw;
                 margin: 0.3vw;
 
@@ -62,10 +67,8 @@
 
             p {
                 display: inline-block;
-                font-size: 20px;
                 padding: 0 0.5vw;
             }
         }
     }
 }
-

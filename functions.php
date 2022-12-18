@@ -65,6 +65,13 @@ function custom()
     }
 }
 
+function replace_link_stylesheet_tag($tag)
+{
+    // return preg_replace(array("/'/", '/(id|media)=".+?" */', '/(type)=".+?" */', '/ \/>/'), array('"', '', 'type="text/sass"', '>'), $tag);
+    return $tag;
+}
+add_filter('style_loader_tag', 'replace_link_stylesheet_tag');
+
 function scriptInit()
 {
     wp_deregister_script('jquery');                                                                             // Disable jQuery included in wordpress
@@ -72,6 +79,8 @@ function scriptInit()
     wp_enqueue_style('css-init', get_template_directory_uri() . '/css/init.css', array(), '0.1.0');
     wp_enqueue_style('css-header', get_template_directory_uri() . '/css/header.css', array(), '0.1.0');
     wp_enqueue_style('css-footer', get_template_directory_uri() . '/css/footer.css', array(), '0.1.0');
+    wp_enqueue_script('sass-sync-min-js', 'https://cdnjs.cloudflare.com/ajax/libs/sass.js/0.11.1/sass.sync.min.js', '0.1.0');
+    wp_enqueue_script('in-browser-sass-min-js', 'https://raw.githubusercontent.com/Neos21/in-browser-sass/master/dist/in-browser-sass.min.js', '0.1.0');
     if (is_front_page() || is_page()) { // Check Static page
         custom();    // Call custom() to load js and css for static pages
     } else {
